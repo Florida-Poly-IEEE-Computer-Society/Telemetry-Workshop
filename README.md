@@ -24,7 +24,7 @@ List of required software to partake in telemetry workshop.
 In order to follow this workshop, you will need to have this code installed locally. Run the following to clone this repository to your host machine:
 
 ```bash
-git clone git@github.com:Florida-Poly-IEEE-Computer-Society/Telemetry-Workshop.git
+git clone https://github.com/Florida-Poly-IEEE-Computer-Society/Telemetry-Workshop.git
 
 # Enter telemetry workshop working directory
 cd Telemetry-Workshop
