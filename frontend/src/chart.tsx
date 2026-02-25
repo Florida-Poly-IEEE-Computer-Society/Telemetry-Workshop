@@ -29,23 +29,4 @@ const dateFormatter = Intl.DateTimeFormat("en-US", {
   timeZone: "America/Los_Angeles",
 });
 
-export default function LineDataset({ dataSet }: { dataSet: { [key: string]: any }[] }) {
-  return (
-    <LineChart
-      xAxis={[
-        { dataKey: 'timestamp', valueFormatter: (value: Date) => dateFormatter.format(value) },
-      ]}
-      yAxis={[{ width: 1 }]}
-      series={Object.keys(tempLabels).map((key) => ({
-        dataKey: key,
-        label: tempLabels[key],
-        showMark: false,
-        ...stackStrategy,
-      }))}
-      dataset={dataSet}
-      skipAnimation={true}
-      colors={greenPalette("light")}
-      {...customize}
-    />
-  );
-}
+// ADD CODE BELOW

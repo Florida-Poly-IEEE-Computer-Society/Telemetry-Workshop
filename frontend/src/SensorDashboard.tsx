@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import LineDataset from "./chart.tsx";
+// UNCOMMENT WHEN CHART IMPLEMENTED
+// import LineDataset from "./chart.tsx";
 
 export interface SensorReading {
   temperature: number;
@@ -115,7 +116,9 @@ export default function SensorDashboard() {
           sys:active &nbsp;·&nbsp; stream:sse &nbsp;·&nbsp; src:localhost:8000
         </p>
       </div>
-      <LineDataset dataSet={dataSet} />
+      {/* UNCOMMENT WHEN CHART IMPLEMENTED
+      <LineDataset dataSet={dataSet} /> 
+      */}
     </div>
   );
 }
